@@ -57,7 +57,7 @@ export default function ProfessionalReading() {
 
   return (
     <div className="min-h-screen flex flex-col">
-            <HeroSection src={"/weekly.png"} />
+            <HeroSection src={"/prof-read.png"} />
 
       {/* Header */}
       <div className="relative py-12 bg-blue-900">
