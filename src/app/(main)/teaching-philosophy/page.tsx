@@ -238,7 +238,7 @@ export default function TeachingPhilosophy() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Inclusive Environment</h3>
                   <p className="text-gray-700">
-                    Creating a classroom where all students feel valued, safe to express themselves, and empoweblue.
+                    Creating a classroom where all students feel valued, safe to express themselves, and empowered.
                   </p>
                 </div>
               </motion.div>

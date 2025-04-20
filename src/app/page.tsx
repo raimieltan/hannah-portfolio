@@ -359,29 +359,7 @@ export default function Home() {
             </div>
 
             {/* Additional Resources */}
-            <div
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:scale-105"
-              onMouseEnter={() => setHoveredCard('resources')}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div className="h-48 bg-blue-600 relative flex items-center justify-center">
-                <FaBoxOpen className="h-20 w-20 text-white opacity-80" />
-                <div className="absolute inset-0 bg-blue-800 opacity-70"></div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Additional Resources</h3>
-                <p className="text-gray-600 mb-4">Supplementary materials, references, and teaching resources to enhance educational practices.</p>
-                <Link
-                  href="/resources"
-                  className={`text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-transform duration-300 ${hoveredCard === 'resources' ? 'translate-x-2' : ''}`}
-                >
-                  Explore Resources
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
