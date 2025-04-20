@@ -43,21 +43,54 @@ export default function Domains() {
             <h3 className="text-2xl font-bold text-blue-800 text-center mb-6">Lesson Plans</h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[1, 2, 3].map(num => (
+            {['2MUSIC-DETAILED-PLAN', 'ARTS_LP', 'HEALTH_LP', 'LP-in-AP-1', 'LP-in-AP-2', 'LP-in-AP-3'].map(num => (
                 <div key={num} className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl border border-gray-200">
                   <div className="h-64 bg-gray-200 relative">
                     <iframe
-                      src={`/AP-LESSON-${num}.pdf`}
+                      src={`/domain-1/${num}.pdf`}
                       className="w-full h-full"
                       title={`AP lesson ${num}`}
                     />
                   </div>
                   <div className="p-4 border-t-4 border-orange-400">
-                    <h4 className="text-lg font-bold text-blue-800">Lesson Plan #{num}</h4>
-                    <p className="text-gray-600 mt-2">Araling Panlipunan</p>
+                    <h4 className="text-lg font-bold text-blue-800">{num}</h4>
+                    <p className="text-gray-600 mt-2">Lesson Plan</p>
                     <div className="flex justify-end mt-2">
                       <a
-                        href={`/AP-LESSON-${num}.pdf`}
+                        href={`/domain-1/${num}.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1 bg-blue-800 text-white text-sm rounded hover:bg-blue-700 transition"
+                      >
+                        <FaBookOpen className="mr-1" /> View PDF
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+                 {/* Lesson Plans Section */}
+                 <div className="mt-6">
+            <h3 className="text-2xl font-bold text-blue-800 text-center mb-6">Observation Sheets</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {['OBSERVATION-SHEET-IN-CAMPUS', 'OBSERVATION-SHEET-OUT-CAMPUS',].map(num => (
+                <div key={num} className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl border border-gray-200">
+                  <div className="h-64 bg-gray-200 relative">
+                    <iframe
+                      src={`/domain-1/${num}.pdf`}
+                      className="w-full h-full"
+                      title={`AP lesson ${num}`}
+                    />
+                  </div>
+                  <div className="p-4 border-t-4 border-orange-400">
+                    <h4 className="text-lg font-bold text-blue-800">{num}</h4>
+                    <p className="text-gray-600 mt-2">Observation Sheets</p>
+                    <div className="flex justify-end mt-2">
+                      <a
+                        href={`/domain-1/${num}.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-3 py-1 bg-blue-800 text-white text-sm rounded hover:bg-blue-700 transition"
@@ -155,6 +188,34 @@ export default function Domains() {
             <h3 className="text-2xl font-bold text-blue-800 text-center mb-6">Instructional Materials</h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[1, 2, 3].map(num => (
+                <div key={num} className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl border border-gray-200">
+                  <div className="h-64 bg-gray-200 relative">
+                    <iframe
+                      src={`/AP-LESSON-${num}.pdf`}
+                      className="w-full h-full"
+                      title={`AP lesson ${num}`}
+                    />
+                  </div>
+                  <div className="p-4 border-t-4 border-orange-400">
+                  <h4 className="text-lg font-bold text-blue-800">AP #{num}</h4>
+                    <p className="text-gray-600 mt-2">Instructional Materials</p>
+                    <div className="flex justify-end mt-2">
+                      <a
+                        href={`/AP-LESSON-${num}.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1 bg-blue-800 text-white text-sm rounded hover:bg-blue-700 transition"
+                      >
+                        <FaBookOpen className="mr-1" /> View PDF
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {['MUSIC', 'ART', 'HEALTH'].map(num => (
                 <div key={num} className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl border border-gray-200">
                   <div className="h-64 bg-gray-200 relative">
@@ -165,8 +226,8 @@ export default function Domains() {
                     />
                   </div>
                   <div className="p-4 border-t-4 border-orange-400">
-                    <h4 className="text-lg font-bold text-blue-800">{num} presentation</h4>
-                    <p className="text-gray-600 mt-2">Domain 4</p>
+                    <h4 className="text-lg font-bold text-blue-800">{num}</h4>
+                    <p className="text-gray-600 mt-2">Instructional Materials</p>
                     <div className="flex justify-end mt-2">
                       <a
                         href={`/2${num}-PRESENTATION.pdf`}
@@ -181,6 +242,7 @@ export default function Domains() {
                 </div>
               ))}
             </div>
+          
           </div>
         </div>
       </div>
