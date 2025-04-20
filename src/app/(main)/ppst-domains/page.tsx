@@ -7,23 +7,6 @@ import Link from 'next/link';
 import HeroSection from '@/app/components/HeroSection';
 import Carousel from '@/app/components/Carousel';
 
-
-// { id: 1, image: '/26.png', number: 'Domain 1', title: 'Content Knowledge and Pedagogy' },
-// { id: 2, image: '/27.png', number: 'Domain 2', title: 'Learning Environment' },
-// { id: 3, image: '/28.png', number: 'Domain 3', title: 'Diversity of Learners' },
-// { id: 4, image: '/29.png', number: 'Domain 4', title: 'Curriculum and Planning' },
-// { id: 5, image: '/30.png', number: 'Domain 5', title: 'Assessment and Reporting' },
-// { id: 6, image: '/31.png', number: 'Domain 6', title: 'Community Linkages and Professional 
-
-// const journalEntries = [
-//   { id: 1, image: '/26.png', number: 'Domain 1', title: 'Content Knowledge and Pedagogy' },
-//   { id: 2, image: '/27.png', number: 'Domain 2', title: 'Learning Environment' },
-//   { id: 3, image: '/28.png', number: 'Domain 3', title: 'Diversity of Learners' },
-//   { id: 4, image: '/29.png', number: 'Domain 4', title: 'Curriculum and Planning' },
-//   { id: 5, image: '/30.png', number: 'Domain 5', title: 'Assessment and Reporting' },
-//   { id: 6, image: '/31.png', number: 'Domain 6', title: 'Community Linkages and Professional Engagement' },
-//   { id: 7, image: '/32.png', number: 'Domain 7', title: 'Personal Growth and Professional Development' },
-
 export default function Domains() {
   const bgImageUrl = "https://scontent-mnl3-2.xx.fbcdn.net/v/t39.30808-6/480877918_1191945892290718_2370627197464526496_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHmULZXRKECBu8dNsqRsB-s4IGqieC--CLggaqJ4L74Ijp8EvpfdsFOBgS6v5BI8DfS_0ua4WyIac0zNNFEOJHw&_nc_ohc=0YcaQtn3NK4Q7kNvwEQL7cc&_nc_oc=AdksmuopWAbGMsEbsicvyQ0D3kHgS1yI3N7pRQtULC5e2_liDifG0gX4hz7FqlJRPxDOiebJAvCyWZAGpJ44HbDi&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&_nc_gid=DPLh7J1WpMfPAYoxWsbUiA&oh=00_AfEbFBxGtEP0XAP4cWAsxvhvyifol5DOvtW_xlxeNgij5w&oe=6807A6A1";
 
