@@ -166,11 +166,7 @@ export default function RootLayout({
                 © {new Date().getFullYear()} Hannah Faye A. Casquite. All rights reserved.
               </p>
 
-              <div className="mt-4 md:mt-0">
-                <p className="text-gray-300 text-sm">
-                  Created with Next.js and Tailwind CSS
-                </p>
-              </div>
+            
             </div>
           </div>
         </footer>

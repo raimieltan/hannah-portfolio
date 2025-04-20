@@ -213,7 +213,7 @@ export default function Domains() {
             <h3 className="text-2xl font-bold text-blue-800 text-center mb-6">Assessment Used in Demo Teaching</h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {['AP', 'AP-LP-2', 'AP-LP-3', 'MUSIC', 'HEALTH', 'ART'].map(num => (
+              {['AP', 'AP-LP-2', 'AP-LP3', 'MUSIC', 'HEALTH', 'ART'].map(num => (
                 <div key={num} className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl border border-gray-200">
                   <div className="h-64 bg-gray-200 relative">
                     <iframe
@@ -223,8 +223,8 @@ export default function Domains() {
                     />
                   </div>
                   <div className="p-4 border-t-4 border-orange-400">
-                    <h4 className="text-lg font-bold text-blue-800">{num} presentation</h4>
-                    <p className="text-gray-600 mt-2">Domain 4</p>
+                    <h4 className="text-lg font-bold text-blue-800">{num} Assessment</h4>
+                    <p className="text-gray-600 mt-2">Domain 5</p>
                     <div className="flex justify-end mt-2">
                       <a
                         href={`/domain-5/${num}-EVALUATION.pdf`}
