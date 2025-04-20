@@ -25,7 +25,7 @@ export default function PDFViewer() {
       file: "/music.pdf",
       title: "Lesson Plan in MAPEH II: Music",
       subject: "Music",
-      grade: "Grade IV",
+      grade: "Grade II",
       icon: <FaBook className="text-green-500" />
     }
   ];
