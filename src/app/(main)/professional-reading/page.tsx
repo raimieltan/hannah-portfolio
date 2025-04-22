@@ -61,47 +61,16 @@ export default function ProfessionalReading() {
     <div className="min-h-screen flex flex-col">
             <HeroSection src={"/prof-read.png"} />
 
-      {/* Header */}
-      <div className="relative py-12 bg-blue-900">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url(${bgImageUrl})` }}></div>
-        <div className="container mx-auto px-4 z-10 relative">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* <div className="flex items-center mb-4 md:mb-0">
-              <Link href="/" className="text-white hover:text-blue-200 flex items-center mr-4">
-                <FaArrowLeft className="mr-2" /> Back to Home
-              </Link>
-              <h1 className="text-3xl font-bold text-white">Professional Reading</h1>
-            </div> */}
-            {/* <div className="flex space-x-2">
-              {professionalReadings.map((reading, index) => (
-                <button
-                  key={reading.id}
-                  onClick={() => {
-                    setActiveReading(index);
-                    setActiveTab('summary');
-                  }}
-                  className={`px-4 py-2 rounded-md transition-all ${
-                    activeReading === index 
-                      ? `bg-white text-${reading.color}-600` 
-                      : 'bg-white/20 text-white hover:bg-white/30'
-                  }`}
-                >
-                  Reading {index + 1}
-                </button>
-              ))}
-            </div> */}
-          </div>
-        </div>
-      </div>
       
       {/* Content section */}
       <section className="py-12 relative flex-grow bg-white">
+        
         <div 
           className="absolute inset-0 bg-cover bg-center z-0 opacity-10"
           style={{ backgroundImage: `url(${bgImageUrl})` }}
         ></div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container w-5/6 mx-auto px-4 relative z-10">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Reading header */}
             <div className={`p-6 ${getColorClass(professionalReadings[activeReading].color, 'bg')} text-white`}>
@@ -169,47 +138,6 @@ export default function ProfessionalReading() {
               )}
             </div>
           </div>
-          
-          {/* Navigation cards */}
-          {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {professionalReadings.map((reading, index) => (
-              <div 
-                key={reading.id}
-                className={`bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer ${
-                  activeReading === index ? 'ring-2 ' + getColorClass(reading.color, 'border') : ''
-                }`}
-                onClick={() => {
-                  setActiveReading(index);
-                  setActiveTab('summary');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                onMouseEnter={() => setHoveredCard(index)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className={`h-32 relative flex items-center justify-center bg-gradient-to-r ${getColorClass(reading.color, 'gradient')}`}>
-                  <div className="absolute right-4 top-4 bg-white rounded-full h-8 w-8 flex items-center justify-center">
-                    <span className="font-bold">{index + 1}</span>
-                  </div>
-                  <div className="text-center text-white">
-                    <h3 className="text-xl font-bold">{reading.title}</h3>
-                    <p className="text-white/80 text-sm">by {reading.author}</p>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-gray-700 line-clamp-2 mb-2">{reading.summary.substring(0, 120)}...</p>
-                  <button 
-                    className={`px-4 py-2 rounded ${getColorClass(reading.color, 'bg')} text-white ${getColorClass(reading.color, 'bgHover')} transition-all flex items-center justify-center w-full ${
-                      hoveredCard === index ? 'translate-y-0' : 'translate-y-1'
-                    }`}
-                  >
-                    {activeReading === index ? 'Currently Viewing' : 'View This Reading'} 
-                    {activeReading !== index && <FaChevronRight className="ml-2" />}
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div> */}
-          
           {/* Quick navigation */}
           <div className="mt-8 flex justify-between">
             <button
