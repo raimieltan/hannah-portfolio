@@ -26,7 +26,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/26.png"
                 alt="Domain 1"
@@ -117,7 +117,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/27.png"
                 alt="Domain 1"
@@ -143,7 +143,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/28.png"
                 alt="Domain 3"
@@ -171,14 +171,14 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-1/2  rounded-lg overflow-hidden">
               <Image
                 src="/29.png"
                 alt="Domain 1"
                 layout='responsive'
                 width={300}
                 height={300}
-                className="object-contain border border-red-300"
+                className="object-contain"
               />
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/30.png"
                 alt="Domain 1"
@@ -324,7 +324,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/31.png"
                 alt="Domain 3"
@@ -350,7 +350,7 @@ export default function Domains() {
 
           {/* Domain Image */}
           <div className="flex justify-center w-full mx-auto">
-            <div className="w-1/2 border border-blue-300 rounded-lg overflow-hidden">
+            <div className="w-5/6 border border-blue-300 rounded-lg overflow-hidden">
               <Image
                 src="/32.png"
                 alt="Domain 3"

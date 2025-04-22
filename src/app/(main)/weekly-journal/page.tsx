@@ -112,7 +112,7 @@ export default function WeeklyJournal() {
         <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${bgImageUrl})` }}></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="w-full mx-auto">
+          <div className="w-5/6 mx-auto">
             <div className="flex justify-between items-center mb-8">
               <div className="text-left w-1/3">
                 <button 
